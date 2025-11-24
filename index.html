@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Portfolio
+	</title>
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+      </script>
+</head>
+<body>
+	<style type="text/css">
+	body{background-color: black;}
+
+	@media screen and (max-width:600px)
+	{
+		#first main{
+			flex-direction: column;
+			button{
+				width: 100px;
+			}
+		}
+		#second{
+			width: 100vw; overflow-x: hidden;
+		}
+
+		#third{
+			width: 100vw; overflow-x: hidden;
+		}
+
+		#four{
+			width: 100vw; overflow-x: hidden;
+		}
+	}
+</style>
+
+	<section id="first" class="w-full h-screen bg-black overflow-hidden">
+		<header id="header" class="w-full bg-black p-5 fixed z-10
+		    flex items-center justify-between text-white">
+			<h1 class="font-semibold uppercase text-2xl">FAISALSHE1KH</h1>
+			<img src="menu-white.png" class="w-10">
+		</header>
+
+		<main class="flex text-white items-center justify-center h-[100%]">
+			<div>
+				<h1 class="font-monospace text-2xl font-bold"><span class="font-semibold text-6xl">Hello</span><br>I am Faisal Ahmed</h1>
+				<h2 class="font-bold">A frontend Web develper</h2>
+				<p class="font-bold">Highly motivated web developer with 8+ year of experience , </p>
+				<div>
+					<button class="bg-white text-black m-5 p-5 rounded-xl
+					 w-100">Contact</button>
+
+					<button class="bg-white text-black m-5 p-5 rounded-xl
+					 w-50">Resume</button>
+				</div>
+			</div>
+			<div>
+				<img src="abo.png" class="w-40">
+			</div>
+		</main>
+	</section>
+
+	<section id="second" class="w-full h-[50%] bg-black text-white mb-20
+	overflow-hidden">
+		<h1 class="text-white pt-10 md:text-center text-3xl font-semibold"
+		id="aboutme">ABOUT ME
+		</h1>
+		<div class="h-[60%]  flex-col md:flex items-center justify-center gap-10">
+			<div><img src="me.png" id="me"></div>
+			<div class="w-100">
+				<h1 class="text-2xl mb-5 font-semibold">Curious about me ? Here you have it</h1>
+	<p class="font-monospace" id="abouttext">i am Faisal Ahmed , a frontend web developer with 2 year hand on experience , i have completed my intermediate from Degree college skardu in computer science , </p></div>
+		</div>	
+	</section>
+	<section id="third" class="w-full h-screen bg-black">
+		<div class="h-[50%] ">
+			<h1 class="text-3xl text-white text-center pt-10
+			font-semibold">SKILLS</h1>
+			<ul class="flex items-center justify-center pt-10 gap-10 overflow-hidden">
+				<li><img src="html.png" class="w-15"></li>
+				<li><img src="css.png" class="w-15"></li>				
+				<li><img src="js.png" class="w-15"></li>
+				<li><img src="react.png" class="w-15"></li>
+			</ul>
+
+			<ul class="flex items-center justify-center pt-10 gap-10">
+				<li><img src="vscode.png"></li>
+				<li><img src="git.png"></li>				
+				<li><img src="mobile-icon.png" class="w-15"></li>
+				<li><img src="ui-icon.png" class="w-15"></li>
+			</ul>
+		</div>
+
+		<div class="h-[50%]" id="projects">
+			<h1 class="text-white text-center text-2xl mb-10 font-semibold">PROJECTS</h1>
+			<div class="md:flex items-center justify-center flex-col">
+			<img src="web.png" class="rounded-xl w-60 mx-auto">
+			<img src="webb.png" class="rounded-xl w-60 mx-auto">
+			<img src="res.png" class="rounded-xl w-60 mx-auto">
+			</div>
+		</div>
+	</section>
+	<section id="four" class="w-full overflow-hidden">
+<h1 class="text-white font-semibold text-center mt-30 text-4xl p-2">Contact with us:- 
+</h1>
+		<div class="md:flex flex-col items-center justify-center h-[50%]">
+			<img src="cont.png">
+		<form class="flex flex-col gap-5 items-center justify-center">
+	<input type="text" placeholder="Enter your name" class="bg-white
+	rounded p-1">
+	<input type="email" placeholder="Enter your Email" class="bg-white
+	rounded p-1">
+	<textarea class="bg-white" placeholder="message"></textarea>
+	<div class="flex items-center justify-center gap-3">
+	<input type="submit" class="bg-white p-2 rounded">
+	<input type="reset" class="bg-white p-2 rounded">
+		</form>
+	</div>
+	</section>
+<footer class="text-gray-900 text-center p-2 border">
+Faisal Ahmed the frontend developer
+</footer>
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+	
+	gsap.from("#first header h1",{
+		opacity:0, duration:1,scale:2,
+	})
+
+	gsap.from("#first header img",{
+		opacity:0, duration:0.1,x:10,
+	})
+
+	gsap.from("#first main div h1",{
+		opacity:0, duration:1,scale:2,
+	})
+
+	gsap.from("#first main div h2",{
+		opacity:0, duration:1,scale:0.1,
+	})
+
+	gsap.from("#first main div p",{
+		opacity:0, duration:1,scale:4,
+	})
+
+	gsap.from("#first main div button",{
+		opacity:0, duration:1,  scale:0.1,
+	})
+
+	gsap.from("#first main div img",{
+		opacity:0, duration:1,
+		scale:3,
+	})
+
+
+	gsap.from("#second #me",{
+		opacity:0, scale:2,scrollTrigger:{
+			trigger:"#second",scroller:"body",start:"top 40%", end:"top 10%", scrub:1,
+		}
+	})
+	gsap.from("#second div h1",{
+		opacity:0, duration:1, scrollTrigger:{
+			trigger:"#second",scroller:"body",start:"top 40%",end:"top 10%",
+			scrub:1,
+		}
+	})
+
+	gsap.from("#second #aboutme",{
+		opacity:0, duration:1,y:10, scrollTrigger:{
+			trigger:"#second",scroller:"body",start:"top 40%",end:"top 10%",
+			scrub:1,
+		}
+	})
+
+	gsap.from("#second #abouttext",{
+		opacity:0,duration:1,scale:0.1, scrollTrigger:{
+			trigger:"#second",scroller:"body",start:"top 45%",end:"top 8%",
+			scrub:1,
+		}
+	})
+
+	gsap.from("#third ul li",{
+		opacity:0,duration:4,scale:6, scrollTrigger:{
+			trigger:"#second",scroller:"body",start:"top 1%",end:"top 3%",
+			scrub:1,
+		}
+	})
+
+	gsap.from("#four form input",{
+		opacity:0,scale:0.1, delay:2, duration:16,  scrollTrigger:{
+			trigger:"#four",scroller:"body",start:"top 96%", end:"top 40%",
+			marker:true, scrub:1, 
+		}
+	})
+
+	gsap.from("#four h1",{
+		opacity:0,y:500, duration:6,  scrollTrigger:{
+			trigger:"#four",scroller:"body",start:"top 90%", end:"top 40%",
+			marker:true, scrub:1, 
+		}
+	})
+	gsap.from("#four div img",{
+		opacity:0, scale:0.1, rotate:360, duration:5, scrollTrigger:{
+			trigger:"#four",scroller:"body",start:"top 90%",
+			end:"top 40%",scrub:1,
+		}
+	})
+
+
+	
+
+</script>
+
+
+</body>
+</html>
+
+
